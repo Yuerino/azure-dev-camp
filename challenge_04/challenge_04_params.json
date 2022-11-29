@@ -1,0 +1,9 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "userId": {
+      "value": "5b643891-7985-4a4c-9894-f2fa5a8270b0"
+    }
+  }
+}
