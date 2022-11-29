@@ -1,8 +1,16 @@
-param namePrefix string = 'storage'
-param blobPrefix string = 'blob'
+@description('Prefix of storage account name')
+param storageNamePrefix string = 'storage'
 
-param storageName string = '${namePrefix}${uniqueString(resourceGroup().id)}'
+@description('Blob container name')
+param blobName string = 'blob'
+
+@description('Storage account name')
+param storageName string = '${storageNamePrefix}${uniqueString(resourceGroup().id)}'
+
+@description('Location for storage account')
 param location string = resourceGroup().location
+
+@description('Use global SKU or not')
 param globalRedundancy bool = false
 
 resource storage 'Microsoft.Storage/storageAccounts@2022-05-01' = {
@@ -14,8 +22,8 @@ resource storage 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   kind: 'StorageV2'
 }
 
-resource blobStorage 'Microsoft.Storage/storageAccounts/blobServices/containers@2022-05-01' = {
-  name: '${storage.name}/default/${blobPrefix}'
+resource blobContainer 'Microsoft.Storage/storageAccounts/blobServices/containers@2022-05-01' = {
+  name: '${storage.name}/default/${blobName}'
 }
 
 output storageId string = storage.id
