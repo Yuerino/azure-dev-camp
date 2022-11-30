@@ -8,7 +8,7 @@ param keyVaultName string = 'devCamp'
 param keyVaultSuffix string = '-KeyVault'
 
 @description('Name of secret')
-param secretName string = 'rootPassword'
+param secretName string = 'adminPassword'
 
 @description('Value of secret')
 @secure()

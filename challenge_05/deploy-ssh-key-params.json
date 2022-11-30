@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "sshKeyName": {
+      "value": "yuerino"
+    },
+    "sshPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDBK0iTx0eIIy4bA6Hr/+m4Tx2egcQK9uIe7gZ3lIz1hf8Q6t/wNFNQnEg3+YwwudMjKFP4NtBvoea7Ap27OjqR06Mgwfpuz5345MKUCUEoWhdjBkHtaZIoSCpn3kIIheFxdtzRvkrsAIJlobDSn2K1MDByzI6u4II+/E1HYeVAXUOT2yTsE9wfiDm44lJNZfACuUv2MiDxeu0CaXNbBaQGfjkgzk4JSBB8UoE4HfU5AEZndG5ngSsTCQEH7/4va2saojJwNVzfjeAHJjmhGmxVG4hVoCZlxvZG6qxei7zAYeOcNco2RW4eRGuFpCreLRo39cIj1yrUunhrsdEpCHNcUzzut5VwlT5QHPoUA35SID0U6ZMWiaaSWuiB10KaNeGEfb4hMFz3R3qIDOSLjQ5+LJgLKUckIDHialWbA6lAqxiTXdq96wsAlLqE9w8pA0710ys9Sd8yHkrtsk1p7SpM2V/Ij1JEm10oLyz/Svi8xXqLAz9Hp6rBeQ2FAzRTB+eDtoqLdpeBKs5JcA6+0gmjErxXU9B2IpUiD9L0H7vPSPC8fO+twVMXar6Ai1j42xokGy8cvzMbYj2ITeGrRdDzJE9lGn5GtwVMIIYFyVVRQraULHAVDV4njykpnki+7f1qSq7NSxuqAqRHB6jzOmHIV8aDwjjAF/xB5x8PqtnlIw== 50553280+Yuerino@users.noreply.github.com"
+    }
+  }
+}
