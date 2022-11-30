@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "type": "eventGridTrigger",
+      "name": "eventGridEvent",
+      "direction": "in"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "outputDocument",
+      "databaseName": "LicensePlates",
+      "collectionName": "NeedsManualReview",
+      "createIfNotExists": false,
+      "connectionStringSetting": "cosmosDBConnection"
+    }
+  ]
+}
